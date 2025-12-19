@@ -11,6 +11,7 @@ type Stats struct {
 	HasReadme    bool           `json:"has_readme"`
 	HasGitignore bool           `json:"has_gitignore"`
 	Score        int            `json:"score"`
+	Dependencies map[string]int `json:"dependencies"`
 }
 
 func New(root string) *Stats {
